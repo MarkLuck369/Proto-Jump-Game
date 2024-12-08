@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp26l6wxbb4od"]
+
+[ext_resource type="AudioStream" uid="uid://dwr81j2xej1th" path="res://idk random/ngini-ija-18489.mp3" id="1_tte0k"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_tte0k")
+volume_db = -15.0
+autoplay = true

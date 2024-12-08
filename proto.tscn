@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv4cfbp8inlmc"]
+
+[ext_resource type="Texture2D" uid="uid://djt4krnhxaaha" path="res://spirrte.png" id="2_37ij3"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="2_g7heu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xy1n"]
+size = Vector2(148.5, 186)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_g7heu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+visible = false
+position = Vector2(106, -213)
+shape = SubResource("RectangleShape2D_0xy1n")
+
+[node name="Spirrte" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(99, -212)
+scale = Vector2(0.845333, 0.750667)
+texture = ExtResource("2_37ij3")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
